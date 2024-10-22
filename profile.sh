@@ -12,7 +12,7 @@ export WORKON_HOME=~/.pyenv
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
-eval $(keychain --eval --agents ssh id_rsa)
+# eval $(keychain --eval --agents ssh id_rsa)
 
 alias ll='ls -l'
 alias lla="ls -la "
@@ -62,4 +62,4 @@ dsh() { docker exec -it "$1" /bin/sh; }
 dbash() { docker exec -it "$1" /bin/bash; }
 dins() { docker inspect "$1" | less; }
 
-source $(multiwerf use 1.2 ea --as-file)
+# source $(multiwerf use 1.2 ea --as-file)
